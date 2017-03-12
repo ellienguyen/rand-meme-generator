@@ -11,11 +11,13 @@ zepposBtn.addEventListener("click", function () {
     memeState = 3;
     zepposBtn.className = origClass + " active";
     mumpBtn.className = allBtn.className = origClass;
+    photo.src = "photos/zeppos/zeppos-1.jpg";
 });
 mumpBtn.addEventListener("click", function () {
     memeState = 2;
     mumpBtn.className = mumpBtn.className + " active";
     zepposBtn.className = allBtn.className = origClass;
+    photo.src = "photos/mumps/mumps-1.jpg";
 
 });
 allBtn.addEventListener("click", function () {
