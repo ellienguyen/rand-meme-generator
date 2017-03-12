@@ -1,0 +1,78 @@
+body {
+  font-family: Helvetica Neue, sans-serif;
+  background-color: #CBAD78; }
+
+.l-box {
+  width: 80vw;
+  max-width: 70rem;
+  max-height: 40rem;
+  height: 45vw;
+  margin: auto;
+  margin-top: 20vh; }
+
+.box {
+  background-color: #595959;
+  padding: 1.5rem; }
+
+.l-top-group {
+  display: block;
+  width: 31vw;
+  margin: auto; }
+
+.l-bottom-right-btn {
+  float: right;
+  width: 18vw; }
+
+.l-bottom-left-btn {
+  float: left;
+  width: 7vw; }
+
+.bottom-btn {
+  height: 7vw;
+  max-height: 5rem; }
+
+.btn {
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.5rem;
+  background-color: #CBAD78;
+  border: none;
+  color: white; }
+
+.btn-group-button {
+  width: 10vw; }
+
+.btn-group-icon {
+  width: 5vw;
+  height: 5vw;
+  padding: 1.5vw !important; }
+
+.box-viewer {
+  width: 80%;
+  margin: 1rem 0 1rem 0; }
+
+.box-viewer > img {
+  height: 25vw;
+  display: block;
+  margin: auto;
+  max-width: 50vw; }
+
+@media (max-width: 767px) {
+  .l-box-group {
+    display: none; }
+
+  .box-viewer {
+    margin-top: -0.25rem; }
+
+  .btn {
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    font-size: 0.25rem; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .btn {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 0.75rem; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .btn {
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    font-size: 1rem; } }
+
+/*# sourceMappingURL=style.css.map */
