@@ -8,12 +8,10 @@ body {
   display: none; }
 
 .l-box {
-  width: 80vw;
-  max-width: 80rem;
-  max-height: 50rem;
-  height: 45vw;
-  margin: auto;
-  margin-top: 20vh; }
+  width: 120vh;
+  height: 70vh;
+  min-height: 37rem;
+  margin: 7rem auto auto auto; }
 
 .box {
   background: -webkit-linear-gradient(to bottom, rgba(25, 25, 25, 0.9), rgba(94, 94, 94, 0.7));
