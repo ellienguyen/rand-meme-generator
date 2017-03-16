@@ -29,7 +29,7 @@ body {
   width: 18vw; }
 
 .bottom-btn {
-  height: 7vw;
+  height: 15vh;
   max-height: 5rem;
   -moz-box-shadow: 0 6px 10px #303030;
   -webkit-box-shadow: 0 6px 10px #303030;
@@ -70,10 +70,11 @@ body {
 
 .box-viewer {
   width: 80%;
+  height: 50vh;
   margin: 1rem 0 1rem 0; }
 
 .box-viewer > img {
-  height: 30vw;
+  height: 45vh;
   display: block;
   margin: auto; }
 
