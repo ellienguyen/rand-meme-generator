@@ -9,7 +9,8 @@ body {
 
 .l-box {
   width: 80vw;
-  max-width: 70rem;
+  max-width: 80rem;
+  max-height: 50rem;
   height: 45vw;
   margin: auto;
   margin-top: 20vh; }
