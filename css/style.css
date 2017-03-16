@@ -30,6 +30,7 @@ body {
 .bottom-btn {
   height: 15vh;
   max-height: 5rem;
+  width: 27vh;
   -moz-box-shadow: 0 6px 10px #303030;
   -webkit-box-shadow: 0 6px 10px #303030;
   box-shadow: 0 6px 10px #303030;
@@ -68,13 +69,14 @@ body {
   color: white; }
 
 .box-viewer {
-  width: 80%;
+  width: 90%;
   height: 50vh;
-  margin: 1rem 0 1rem 0; }
+  margin: 2vh auto 2vh auto; }
 
 .box-viewer > img {
-  height: 45vh;
   display: block;
+  max-height: 95%;
+  width: auto;
   margin: auto; }
 
 @media (max-width: 770px) {
@@ -82,7 +84,7 @@ body {
     background: #CBAD78; }
 
   .l-box {
-    height: 60vh;
+    height: 65vh;
     width: 80vw;
     margin: 2vh 10vw 2vh 10vw; }
 
@@ -116,7 +118,11 @@ body {
 
   .btn {
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    font-size: 0.25rem; } }
+    font-size: 0.8rem; }
+
+  .bottom-btn {
+    height: 15vw;
+    width: 30vw; } }
 @media (max-width: 767px) and (orientation: landscape) {
   .l-logo-header {
     display: none; }
@@ -132,7 +138,15 @@ body {
     height: 50vh; }
 
   .box-viewer > img {
-    max-height: 49vh; } }
+    max-height: 49vh; }
+
+  .bottom-btn {
+    height: 8vw;
+    width: 20vw; }
+
+  .btn {
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    font-size: 0.8rem; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   .btn {
     padding: 0.75rem 1.5rem 0.75rem 1.5rem;
