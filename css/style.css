@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
 body {
-  background: url("../photos/background.jpg") top 20% center;
-  background-repeat: no-repeat;
+  background: url("../photos/background.jpg") no-repeat top 20% center;
   background-size: cover; }
 
 .l-logo-header {
