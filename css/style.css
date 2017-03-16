@@ -153,7 +153,7 @@ body {
 
   .l-box {
     margin-top: 10vw; } }
-@media (max-height: 360px) and (orientation: landscape) {
+@media (max-height: 450px) and (orientation: landscape) {
   .l-logo-header {
     display: none; }
 
