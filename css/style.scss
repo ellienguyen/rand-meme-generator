@@ -154,7 +154,6 @@ body {
 
   .l-box {
     margin-top: 5vh;
-
   }
 
   .l-logo-header {
@@ -197,8 +196,16 @@ body {
   .l-box {
     margin-top: 10vw;
   }
+}
 
-
+@media (max-height: 360px) and (orientation:landscape){
+  .l-logo-header {
+    display: none;
+  }
+  .l-box {
+    margin-top: 5vh;
+    height: 80vh;
+  }
 }
 
 // Large devices (desktops, 992px and up)
