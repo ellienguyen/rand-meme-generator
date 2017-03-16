@@ -1,10 +1,16 @@
-$base-font: Helvetica Neue;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600');
+$base-font: 'Source Sans Pro';
 $gold-color: #CBAD78;
 $box-color: #595959;
+$deep-gold: #BB9D68;
 
 body {
-  font-family: $base-font, sans-serif;
-  background-color: $gold-color;
+  background: url("../photos/background.jpg") top 20% center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.l-logo-header {
+  display: none;
 }
 
 .l-box {
@@ -14,11 +20,11 @@ body {
   height: 45vw;
   margin: auto;
   margin-top: 20vh;
-
 }
 
 .box {
-  background-color: $box-color;
+  background: -webkit-linear-gradient(to bottom, rgba(25,25,25,0.9) , rgba(94,94,94,0.7)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(25,25,25,0.9) , rgba(94,94,94,0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 1.5rem;
 }
 
@@ -33,14 +39,13 @@ body {
   width: 18vw;
 }
 
-.l-bottom-left-btn {
-  float: left;
-  width: 7vw;
-}
-
 .bottom-btn {
   height: 7vw;
   max-height: 5rem;
+  -moz-box-shadow:  0 6px 10px #303030;
+  -webkit-box-shadow: 0 6px 10px #303030;
+  box-shadow: 0 6px 10px #303030;
+  border-radius: 4rem;
 }
 
 
@@ -50,18 +55,36 @@ body {
   background-color: $gold-color;
   border: none;
   color: white;
+  text-transform: uppercase;
+  font-family: $base-font;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
 }
 
 .btn-group-button {
   width: 10vw;
+  background: none;
+  color: #CCCCCC;
 }
 
-.btn-group-icon {
-  width: 5vw;
-  height: 5vw;
-  padding: 1.5vw !important;
+.btn:hover, .btn:active, .btn:focus, .active {
+  border: none;
+  box-shadow: none;
 }
 
+.btn-group-button:hover, .btn-group-button:active, .btn-group-button:focus, .btn-group-button.active {
+  border-bottom: 3px solid #CBAD78;
+  background: none;
+  color: white;
+}
+
+.bottom-btn:hover, .bottom-btn:active, .bottom-btn:focus, .bottom-btn.active {
+  -moz-box-shadow: 0 6px 10px #303030;
+  -webkit-box-shadow: 0 6px 10px #303030;
+  box-shadow: 0 6px 10px #303030;
+  background-color: $deep-gold;
+  color: white;
+}
 
 .box-viewer {
   width: 80%;
@@ -79,11 +102,37 @@ body {
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767px) {
-  .l-box-group {
-    display: none;
+  body {
+    background: $gold-color;
   }
+
+  .l-box {
+    height: 50vw;
+    margin-top: 10vw;
+  }
+
+  .l-logo-header {
+    margin: 10% auto auto auto;
+    width: 50%;
+  }
+
+  .box {
+    padding: 0.5rem;
+  }
+  .l-top-group {
+    width: 60%;
+  }
+
+  .l-logo-header {
+    display: block;
+  }
+
+  .btn-group-button {
+    width: 30%;
+  }
+
   .box-viewer {
-    margin-top: -0.25rem;
+    margin: 0.5rem 0 0.5rem 0;
   }
   .btn {
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
@@ -97,6 +146,12 @@ body {
     padding: 0.5rem 1rem 0.5rem 1rem;
     font-size: 0.75rem;
   }
+
+  .l-box {
+    margin-top: 10vw;
+  }
+
+
 }
 
 // Large devices (desktops, 992px and up)

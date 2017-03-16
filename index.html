@@ -9,13 +9,17 @@
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="photos/icons/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
     <title>Dank New Rand Memes Generator</title>
 </head>
 <body>
+<div class="l-logo-header">
+    <img src="https://www.vanderbilt.edu/graphicstandards/files/vu/vu02ar.jpg" alt="Vanderbilt Logo" class="img-fluid mx-auto">
+</div>
 <div class="l-box box">
     <div class="l-box-group">
         <div class="btn-group l-top-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary btn-group-button active" id = "all">All</button>
+            <button type="button" class="btn btn-secondary btn-group-button" id = "all">All</button>
             <button type="button" class="btn btn-secondary btn-group-button" id = "mumps">Mumps</button>
             <button type="button" class="btn btn-secondary btn-group-button" id = "zeppos">Zeppos</button>
         </div>
@@ -23,15 +27,7 @@
     <div class="box-viewer mx-auto">
         <img src="photos/mis/mis-1.jpg" alt="" class="" id = "meme">
     </div>
-    <div class="box-nav">
-        <a href="https://twitter.com/share" data-show-count="false">
-            <button type="button" class="btn btn-secondary l-bottom-left-btn bottom-btn">
-                <img src="photos/icons/002-twitter-logo-silhouette.png" class="img-fluid">
-            </button>
-        </a>
-        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <button type="button" class="btn btn-secondary l-bottom-right-btn bottom-btn" id = "next">New meme</button>
-    </div>
+    <button type="button" class="btn btn-secondary l-bottom-right-btn bottom-btn" id = "next">New meme</button>
 </div>
 </div>
 </body>
