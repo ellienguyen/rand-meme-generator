@@ -160,7 +160,7 @@ body {
   .l-box {
     margin-top: 5vh;
     height: 80vh;
-    min-height: 330px; } }
+    min-height: 250px; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   .btn {
     padding: 0.75rem 1.5rem 0.75rem 1.5rem;
