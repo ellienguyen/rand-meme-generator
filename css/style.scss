@@ -89,16 +89,16 @@ body {
 }
 
 .box-viewer > img {
-  height: 25vw;
+  height: 30vw;
   display: block;
   margin: auto;
-  max-width: 50vw;
 }
 
 
 
+
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 767px) and (orientation:portrait){
+@media (max-width: 770px) {
   body {
     background: $gold-color;
   }
@@ -118,6 +118,7 @@ body {
   .box-viewer > img {
     max-width: 100%;
     height: auto;
+    max-height: 40vh;
   }
   .l-logo-header {
     margin: 5vh auto auto auto;
@@ -148,64 +149,23 @@ body {
 }
 
 @media (max-width: 767px) and (orientation:landscape){
-  body {
-    background: $gold-color;
-  }
-
-  .l-box {
-    margin-top: 5vh;
-  }
-
-  .l-logo-header {
-    margin: 5vh auto auto auto;
-    width: 30vw;
-  }
-
-  .box {
-    padding: 0.5rem;
-  }
-  .l-top-group {
-    width: 60%;
-  }
-
-  .l-logo-header {
-    display: block;
-    height: 10vh;
-  }
-
-  .btn-group-button {
-    width: 30%;
-  }
-
-  .box-viewer {
-    margin: 0.5rem 0 0.5rem 0;
-  }
-  .btn {
-    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    font-size: 0.25rem;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991px) {
-  .btn {
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    font-size: 0.75rem;
-  }
-
-  .l-box {
-    margin-top: 10vw;
-  }
-}
-
-@media (max-height: 450px) and (orientation:landscape){
   .l-logo-header {
     display: none;
   }
   .l-box {
     margin-top: 5vh;
-    height: 70vh;
+    height: 80vh;
     min-height: 300px;
+  }
+
+  .box-viewer {
+    margin: 0.5rem 0 0.5rem 0;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .box-viewer > img {
+    max-height: 49vh;
   }
 }
 

@@ -17,7 +17,7 @@ mumpBtn.addEventListener("click", function () {
     memeState = 2;
     mumpBtn.className = mumpBtn.className + " active";
     zepposBtn.className = allBtn.className = origClass;
-    photo.src = "photos/mumps/mumps-1.jpg";
+    photo.src = "photos/mump/mump-1.jpg";
 
 });
 allBtn.addEventListener("click", function () {
@@ -25,21 +25,40 @@ allBtn.addEventListener("click", function () {
     allBtn.className = allBtn.className + " active";
     zepposBtn.className = mumpBtn.className = origClass;
 });
-var src = ["mis", "mumps", "zeppos"];
+var photoList =
+    [{
+        name: "mis",
+        number: 21
+    }, {
+        name: "mump",
+        number: 11
+    }, {
+        name: "zeppos",
+        number: 12
+    }
+];
+var photoNumber = 0;
+photoList.forEach(function (photoType) {
+    photoNumber+=photoType.number;
+});
 var nextBtn = document.getElementById("next");
 nextBtn.addEventListener("click", function () {
     if (memeState == 1) {
-        var randomNum = Math.floor(Math.random() * 9);
-        if (randomNum < 7) {
-            photo.src = "photos/mis/mis-" + (randomNum + 1) + ".jpg";
-        } else if (randomNum == 7) {
-            photo.src = "photos/mumps/mumps-" + (8-randomNum) + ".jpg";
-        } else  {
-            photo.src = "photos/zeppos/zeppos-" + (9-randomNum) + ".jpg";
+        var randomNum = Math.ceil(Math.random() * photoNumber);
+        if (randomNum <= photoList[0].number) {
+            photo.src = "photos/" + photoList[0].name + "/" + photoList[0].name + "-" + randomNum + ".jpg";
+        } else if (randomNum <= photoList[1].number + photoList[0].number) {
+            var index = randomNum - photoList[0].number;
+            photo.src = "photos/" + photoList[1].name + "/" + photoList[1].name + "-" + index + ".jpg";
+        } else {
+            var index = randomNum - photoList[0].number  - photoList[1].number;
+            photo.src = "photos/" + photoList[2].name + "/" + photoList[2].name + "-" + index + ".jpg";
         }
     } else if (memeState == 2) {
-        photo.src = "photos/mumps/mumps-1.jpg";
+        var randomNum = Math.ceil(Math.random() * photoList[1].number);
+        photo.src = "photos/" + photoList[1].name + "/" + photoList[1].name + "-" + randomNum + ".jpg";
     } else {
-        photo.src = "photos/zeppos/zeppos-1.jpg";
+        var randomNum = Math.ceil(Math.random() * photoList[2].number);
+        photo.src = "photos/" + photoList[2].name + "/" + photoList[2].name + "-" + randomNum + ".jpg";
     }
 });
