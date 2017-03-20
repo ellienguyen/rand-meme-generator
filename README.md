@@ -5,7 +5,7 @@ This is a website providing content from Dank New Rand Meme, the leading meme gr
 The website lets you view all memes in the storage or choose certain topic that you want. The website only supports 2 topics for now
 
 ## Screenshot
-![IPhone 5 Portrait](/photos/screenshot/iPhone5-portrait.png)
+![](https://github.com/ellienguyen/rand-meme-generator/blob/master/photos/screenshot/iphone5-portrait.png)
 
 ## Creators
 Ellie Nguyen <a href = "https://github.com/ellienguyen">@ellienguyen</a>
